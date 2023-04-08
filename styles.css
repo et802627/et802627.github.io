@@ -1,0 +1,327 @@
+/* Mobile layout*/
+* {
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+#flex-container, #flex-container2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#flex-container, #flex-container2 > nav {
+    border: 0px;
+}
+#flex-container > header {
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#flex-container > main {
+    border-top: 5px solid lime;
+}
+header > h1 {
+    font-size: 1.5rem;
+}
+#article1 > h2 {
+    font-size: 1.0rem;
+}
+#article2 > h2 {
+    font-size: 1.0rem;
+}
+#article3 > h2 {
+    font-size: 1.0rem;
+}
+#h1one, #h1two, #h1three {
+    font-size: 1.5rem;
+}
+#img1, #img2 {
+    width: 180px;
+}
+#profilePic {
+    width: 126px;
+    height: 142px;
+}
+.cake {
+    width: 36px;
+    height: 48px;
+}
+h1 ~ h2 {
+    font-size: 1.0rem;
+}
+#h2one, #h2two, #h2three, #h2four, #h2five {
+    font-size: 1.0rem;
+}
+/* Tablet layout*/
+@media screen and (min-width: 1000px) {
+    header > h1 {
+        font-size: 1.8rem;
+    }
+    #article1 > h2 {
+        font-size: 1.2rem;
+    }
+    #article2 > h2 {
+        font-size: 1.2rem;
+    }
+    #article3 > h2 {
+        font-size: 1.2rem;
+    }
+    #h1one, #h1two, #h1three {
+        font-size: 1.8rem;
+    }
+    #img1, #img2 {
+        width: 320px;
+    }
+    #profilePic {
+        width: 258px;
+        height: 288px;
+    }
+    .cake {
+        width: 112px;
+        height: 149px;
+    }
+    h1 ~ h2 {
+        font-size: 1.2rem;
+    }
+    #h2one, #h2two, #h2three, #h2four, #h2five {
+        font-size: 1.2rem;
+    }
+    #warning {
+        font-size: larger;
+    }
+}
+/* Desktop layout*/
+@media screen and (min-width: 1400px) {
+    header > h1 {
+        font-size: 2.0rem;
+    }
+    #article1 > h2 {
+        font-size: 1.5rem;
+    }
+    #article2 > h2 {
+        font-size: 1.5rem;
+    }
+    #article3 > h2 {
+        font-size: 1.5rem;
+    }
+    #h1one, #h1two, #h1three {
+        font-size: 2.0rem;
+    }
+    #img1, #img2 {
+        width: 360px;
+    }
+    #profilePic {
+        width: 306px;
+        height: 408px;
+    }
+    .cake {
+        width: 288px;
+        height: 383px;
+    }
+    #h1two, #h1three, #h2one, #btnPara1, #btnPara2 {
+        text-align: center;
+    }
+    h1 ~ h2 {
+        font-size: 1.5rem;
+    }
+    #h2one, #h2two, #h2three, #h2four, #h2five {
+        font-size: 1.5rem;
+    }
+    #warning {
+        font-size: x-large;
+    }
+}
+.heroBody {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.heroImage {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)), 
+        url("heroImage.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroImage .heroText {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+}
+.heroImage .heroText h1 {
+    font-size: 80px;
+    background-color: transparent;
+}
+.heroImage .heroText p {
+    font-size: 60px;
+    line-height: 10px;
+    background-color: transparent;
+}
+.heroImage .heroText a {
+    font-size: 40px;
+    text-decoration: none;
+    color: lime;
+    background-color: transparent;
+}
+#grid-container, #grid-container2 {
+    display: grid;
+    width: 100%;
+    margin: 0px;
+    grid-template-columns: auto auto auto auto;
+}
+#grid-container > div {
+    text-align: center;
+    background: darkgreen;
+    margin: 0px;
+    padding: 10px;
+}
+div > a:link {
+    color: lime;
+    text-decoration: none;
+    background: darkgreen;
+}
+div > a:visited {
+    color: aqua;
+    background: darkgreen;
+}
+div > a:hover {
+    background-color: yellow;
+}
+main > #article2 {
+    border-top: 5px solid lime;
+}
+main > #article3 {
+    border-top: 5px solid lime;
+    border-bottom: 5px solid lime;
+}
+img {
+    border: 5px solid yellow;
+    padding: 10px;
+    margin: 2px;
+    background-color: gold;
+}
+img[alt^="Link"] {
+    border: 5px solid darkorchid;
+    padding: 10px;
+    margin: 2px;
+    background-color: darkmagenta;
+}
+p > a:link {
+    color: lime;
+    text-decoration: none;
+}
+p > a:visited {
+    color: aqua;
+}
+table {
+    width: 100%;
+}
+#half-table1, #half-table2 {
+    width: 75%;
+    border: 5px outset green;
+    border-collapse: collapse;
+}
+th {
+    height: 25px;
+    vertical-align: top;
+    text-align: left;
+    border: 5px solid lime;
+    padding: 5px;
+}
+td {
+    vertical-align: top;
+    text-align: left;
+    border: 5px solid lime;
+    padding: 5px;
+}
+#projects1, #projects2, #projects3, #projects4 {
+    text-align: center;
+    border: 0px;
+}
+ol, ul {
+    background: darkgreen;
+    padding: 20px;
+}
+ol li {
+    background: green;
+    padding: 5px;
+    margin-left: 35px;
+}
+ul li {
+    background: green;
+}
+td > a:link {
+    color: lime;
+    text-decoration: none;
+}
+td > a:visited {
+    color: aqua;
+}
+p + a:link {
+    color: lime;
+}
+p + a:visited {
+    color: aqua;
+}
+li > a:link {
+    color: lime;
+    text-decoration: none;
+    background: green;
+}
+li > a:visited {
+    color: aqua;
+    background: green;
+}
+#sibling ~ h2 {
+    border-top: 5px solid lime;
+    padding-top: 10px;
+}
+textarea {
+    border: 5px solid lime;
+}
+p > textarea::placeholder {
+    color: white;
+}
+input[type=radio] {
+    appearance: none;
+    margin: 0;
+}
+input[type=radio] + label::before {
+    content: "\00a0";  
+    border-radius: 5px;
+    display: inline-block;
+    width: 1em;  
+    height: 1em; 
+    text-align: center;
+    line-height: 1em;
+    font-size: 0.8em;
+    margin-right: 10px;
+    background-color: grey;
+    border: 0.15em solid white;
+}
+input[type=radio]:checked + label::before {
+    content: "\2022";
+    color: lime;
+    background: lime;
+}
+input[type=submit] {
+    background-color: lime;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: aqua;
+}
+#warning {
+    color: red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#colourpallet1, #colourpallet2, #colourpallet3 {
+    border: 2px solid lime;
+}
